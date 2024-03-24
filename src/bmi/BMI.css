@@ -1,0 +1,118 @@
+.bmi-title {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 3.3rem;
+}
+
+.bmi-container {
+  font-family: "Roboto", sans-serif;
+  border: 0.1rem solid hsl(0, 1%, 82%);
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 45vw;
+  border-radius: 2%;
+  padding: 2rem 1.1rem;
+  background-color: #fff;
+}
+
+.topmenu-items {
+  display: flex;
+  align-items: center;
+}
+
+.topmenu-items li {
+  font-family: "Roboto", sans-serif;
+  width: 10rem;
+  height: 3rem;
+  background-color: #6e6d6d;
+  color: #fff;
+  margin: 0.4rem;
+  font-size: 1.5rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.topmenu-items li.active {
+  background-color: hsl(10, 95%, 39%);
+  color: #fff;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bmi-value {
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.bmi-status {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  margin: 2rem 0;
+  background-color: hsla(62, 10%, 96%, 1);
+  padding: 1.2rem 0rem;
+}
+
+.bmi-status p {
+  margin: 0rem 0.5rem;
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.severe {
+  color: hsla(205, 70%, 57%, 1);
+}
+
+.normal {
+  color: hsla(133, 45%, 50%, 1);
+}
+
+.overweight {
+  color: hsla(53, 88%, 39%, 1);
+}
+
+.obeseI {
+  color: hsla(30, 56%, 60%, 1);
+}
+
+.obeseII {
+  color: hsla(16, 90%, 63%, 1);
+}
+
+.obeseIII {
+  color: hsla(4, 90%, 63%, 1);
+}
+
+@media screen and (max-width: 750px) {
+  .bmi-container {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bmi-container {
+    width: 90vw;
+  }
+}

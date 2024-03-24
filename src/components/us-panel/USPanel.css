@@ -1,0 +1,56 @@
+.panel {
+  width: 100%;
+  padding: 1.2rem 1rem;
+}
+
+.panel-container {
+  background-color: #f2f2f2;
+}
+
+.panel-container .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  border: 0.1rem double #d9d9d9;
+}
+
+.label,
+input.label {
+  font-size: 1.75rem;
+}
+
+.panel-container .right {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.height {
+  display: flex;
+}
+
+.height input {
+  padding: 0.5rem 0.3rem;
+  margin: 0 0.15rem;
+  text-align: right;
+  width: 100%;
+}
+
+.pounds-row input,
+.age-row input {
+  padding: 0.5rem 0.5rem;
+  margin: 0 0.15rem;
+  text-align: right;
+  width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  .label,
+  input.label {
+    font-size: 1.3rem;
+  }
+
+  .button-group button {
+    width: 10rem;
+  }
+}

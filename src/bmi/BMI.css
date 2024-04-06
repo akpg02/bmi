@@ -6,11 +6,8 @@
 
 .bmi-container {
   font-family: "Roboto", sans-serif;
-  border: 0.1rem solid hsl(0, 1%, 82%);
-  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 45vw;
   border-radius: 2%;
+  width: 45vw;
   padding: 2rem 1.1rem;
   background-color: #fff;
 }

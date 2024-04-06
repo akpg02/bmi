@@ -5,6 +5,7 @@
 
 .panel-container {
   background-color: #f2f2f2;
+  
 }
 
 .panel-container .row {
@@ -12,6 +13,11 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
   border: 0.1rem double #d9d9d9;
+  padding: 0.2rem 0rem;
+}
+
+.panel-container .col {
+  padding: 0.5rem 0.5rem;
 }
 
 .label,
